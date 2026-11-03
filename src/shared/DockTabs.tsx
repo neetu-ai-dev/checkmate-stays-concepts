@@ -1,7 +1,7 @@
 import { useRef } from "react";
 import "./dock-tabs.css";
 
-/* Tabs in the idiom of Concept Two's hero dock: a lit glass capsule of uppercase pills that
+/* Tabs in the idiom of the Highlands hero dock: a lit glass capsule of uppercase pills that
    magnify as the pointer nears them, a specular rim that points back at the pointer, and the
    current item wearing the cards' paper. Each page themes it through --dt-* properties. */
 

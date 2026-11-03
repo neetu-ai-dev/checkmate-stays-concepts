@@ -1,7 +1,7 @@
 import * as THREE from "three";
 import { buildHouse, buildOak, buildPines, disposeScene, glowTexture, makeNoise } from "../../shared/three/retreatKit";
 
-/* Concept One — the approach. A wide alpine valley at first light: a sea of cloud below,
+/* Approach — the camera path. A wide alpine valley at first light: a sea of cloud below,
    a snow range behind, and a retreat on a ridge in the distance. Scroll progress p ∈ [0, 1]
    glides the camera down a grounded path toward the house, easing in and out, with a slight
    arc in the last stretch so the balcony side turns towards the viewer. It stops at a calm

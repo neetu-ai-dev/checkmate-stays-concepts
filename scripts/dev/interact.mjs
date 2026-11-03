@@ -106,14 +106,14 @@ const pinCheck = async (page, label, sectionSel) => {
   const cards = await page.locator('.hub-card').count();
   const nw = await page.locator('a[href="/concepts/night-watch"]').count();
   const order = await page.locator('.hub-title').allInnerTexts();
-  check('Hub: four concepts in order, no Night Watch', cards === 4 && nw === 0 && order.join() === 'Approach,Highlands,Ridgelight,Checkmate', order.join(', '));
+  check('Hub: four concepts in order, no Night Watch', cards === 4 && nw === 0 && order.join() === 'Ridgelight,Approach,Checkmate,Highlands', order.join(', '));
   await page.goto(base + '/concepts/night-watch', { waitUntil: 'networkidle' });
   check('Old Night Watch link returns to the overview', new URL(page.url()).pathname === '/');
   check('Hub: no runtime errors', errors.length === 0, errors.join(' | '));
   await context.close();
 }
 
-// ── Checkmate (Concept 4) — shorter opening, booking after the board ───────────────
+// ── Checkmate — shorter opening, booking after the board ───────────────
 {
   const { page, context, errors } = await open('/concepts/checkmate');
   check('Checkmate: no booking window in the chess scene', (await page.locator('.cm-stage form, .cm-book-group').count()) === 0);
@@ -145,7 +145,7 @@ const pinCheck = async (page, label, sectionSel) => {
   await context.close();
 }
 
-// ── Highlands (Concept 2) — photographic scenery, scroll-driven experiences ─────────
+// ── Highlands — photographic scenery, scroll-driven experiences ─────────
 {
   const { page, context, errors } = await open('/concepts/highlands');
   await page.waitForTimeout(2500);
@@ -194,7 +194,7 @@ for (const [label, opts] of [['Highlands reduced', { reduced: true }], ['Highlan
   await context.close();
 }
 
-// ── Ridgelight (Concept 3) — ridgeline frames ─────────────────────────────
+// ── Ridgelight — ridgeline frames ─────────────────────────────
 {
   const { page, context, errors } = await open('/concepts/ridgelight');
   check('Ridgelight: hero chapter chips removed', (await page.locator('.rl-chips').count()) === 0);
@@ -252,7 +252,7 @@ for (const [label, opts] of [['Highlands reduced', { reduced: true }], ['Highlan
   await context.close();
 }
 
-// ── Approach (Concept 1) — the approach, the arrival ───────────────────────────────
+// ── Approach — the approach, the arrival ───────────────────────────────
 {
   const { page, context, errors } = await open('/concepts/approach');
   check('Approach: approach canvas present', await page.evaluate(() => !!document.querySelector('.ap-scene canvas')));

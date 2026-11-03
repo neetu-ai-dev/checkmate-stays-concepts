@@ -45,10 +45,10 @@ export function IllustrativeNote({ className = "" }: { className?: string }) {
 }
 
 const CONCEPTS = [
-  { to: "/concepts/approach", n: "1", label: "Approach" },
-  { to: "/concepts/highlands", n: "2", label: "Highlands" },
-  { to: "/concepts/ridgelight", n: "3", label: "Ridgelight" },
-  { to: "/concepts/checkmate", n: "4", label: "Checkmate" },
+  { to: "/concepts/ridgelight", n: "1", label: "Ridgelight" },
+  { to: "/concepts/approach", n: "2", label: "Approach" },
+  { to: "/concepts/checkmate", n: "3", label: "Checkmate" },
+  { to: "/concepts/highlands", n: "4", label: "Highlands" },
 ];
 
 /** Reviewer-only switcher for comparing concepts; not part of any design. */

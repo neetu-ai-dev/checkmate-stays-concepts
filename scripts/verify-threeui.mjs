@@ -4,7 +4,7 @@
 //  - The authored HTML and binary assets are copied byte-for-byte from the published
 //    @designcodeio/threeui package (lib-dist/assets/landing-pages/).
 // Every file is checked against the required size and SHA-256. Exits non-zero on any mismatch.
-// The concepts no longer use SylvaHero (Concept 2 became an original mountain scene), so the
+// The concepts no longer use SylvaHero (Highlands became an original mountain scene), so the
 // verified files live in archive/threeui-sylva/, outside the build.
 // Usage: node scripts/verify-threeui.mjs [--install]
 import fs from 'fs';

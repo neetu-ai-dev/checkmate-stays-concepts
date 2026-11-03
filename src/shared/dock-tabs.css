@@ -1,4 +1,4 @@
-/* Dock tabs: Concept Two's hero dock, as a reusable control. Themed through --dt-*. */
+/* Dock tabs: the Highlands hero dock, as a reusable control. Themed through --dt-*. */
 .dt {
   --dt-bar: rgba(32, 39, 48, 0.74); --dt-line: rgba(255, 255, 255, 0.11); --dt-ink: #fff; --dt-faint: rgba(255, 255, 255, 0.62);
   --dt-pill: rgba(255, 255, 255, 0.04); --dt-near: rgba(29, 36, 45, 0.94); --dt-paper: #f4f0ea; --dt-paper-ink: #1d232b; --dt-focus: #f1c48a;

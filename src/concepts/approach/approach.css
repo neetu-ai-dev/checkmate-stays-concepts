@@ -1,4 +1,4 @@
-/* Concept One (Approach). Newsreader (an optical-size serif built for reading) for display, Inter for
+/* Approach. Newsreader (an optical-size serif built for reading) for display, Inter for
    text: calmer and more legible than the earlier high-contrast Didone. Slate ink on ice,
    with a muted terracotta for emphasis. */
 .ap {
@@ -15,7 +15,7 @@
 .ap-kicker { font-size: 0.76rem; letter-spacing: 0.14em; text-transform: uppercase; color: var(--clay); font-weight: 600; margin-bottom: 14px; }
 .ap main > section { padding: clamp(80px, 11vw, 200px) var(--gutter); max-width: 2560px; margin: 0 auto; }
 
-/* header: Concept Two's dock, in Approach's ice and slate */
+/* header: the Highlands hero dock, in Approach's ice and slate */
 .ap-header { position: fixed; inset: 0 0 auto; z-index: 600; height: 76px; padding: 0 var(--gutter); display: grid; grid-template-columns: 1fr auto 1fr; align-items: center; gap: 16px; transition: background-color .4s, border-color .4s; border-bottom: 1px solid transparent; color: var(--ink); }
 .ap-header.is-scrolled { background: rgba(238, 242, 245, 0.88); border-color: var(--line); -webkit-backdrop-filter: blur(12px); backdrop-filter: blur(12px); }
 .ap-logo { color: inherit; display: inline-flex; width: max-content; }

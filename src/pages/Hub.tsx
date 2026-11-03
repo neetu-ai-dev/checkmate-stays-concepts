@@ -6,24 +6,24 @@ import "./hub.css";
 
 const CONCEPTS = [
   {
-    to: "/concepts/approach", n: "01", title: "Approach", image: "approach-sunrise-huts",
-    line: "Above a sea of cloud at first light, a slow glide up the valley to the retreat, and the arrival scene slides in with booking.",
-    tags: ["Camera path", "Arrival scene", "Scroll-driven rail"],
-  },
-  {
-    to: "/concepts/highlands", n: "02", title: "Highlands", image: "highlands-dawn",
-    line: "The SylvaHero experience (dock, liquid-metal controls, pixel reveals) over a dawn photograph that moves with depth.",
-    tags: ["Adapted SylvaHero", "Depth-mapped photo", "Scroll-driven rail"],
-  },
-  {
-    to: "/concepts/ridgelight", n: "03", title: "Ridgelight", image: "aframe-lodge",
+    to: "/concepts/ridgelight", n: "01", title: "Ridgelight", image: "aframe-lodge",
     line: "A full day in the mountains: the world runs from morning to starlight as you scroll, photographs rising in ridgeline frames.",
     tags: ["Three.js world", "Day-to-night", "Ridgeline frames"],
   },
   {
-    to: "/concepts/checkmate", n: "04", title: "Checkmate", image: "noir-retreat",
+    to: "/concepts/approach", n: "02", title: "Approach", image: "approach-sunrise-huts",
+    line: "Above a sea of cloud at first light, a slow glide up the valley to the retreat, and the arrival scene slides in with booking.",
+    tags: ["Camera path", "Arrival scene", "Scroll-driven rail"],
+  },
+  {
+    to: "/concepts/checkmate", n: "03", title: "Checkmate", image: "noir-retreat",
     line: "Opens on the board, one move from mate. Scroll plays Qg7#, and the queen's silhouette opens onto the retreat; booking follows.",
     tags: ["Canvas 2D chess", "Short opening", "Scroll timeline"],
+  },
+  {
+    to: "/concepts/highlands", n: "04", title: "Highlands", image: "highlands-dawn",
+    line: "The SylvaHero experience (dock, liquid-metal controls, pixel reveals) over a dawn photograph that moves with depth.",
+    tags: ["Adapted SylvaHero", "Depth-mapped photo", "Scroll-driven rail"],
   },
 ];
 

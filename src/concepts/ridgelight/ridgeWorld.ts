@@ -1,7 +1,7 @@
 import * as THREE from "three";
 import { buildHouse, buildOak, buildPines, disposeScene, glowTexture, ridgeTexture, seeded, smoothDamp, type House } from "../../shared/three/retreatKit";
 
-/* Concept Three — Ridgelight. A fixed 3D world behind the whole page: layered Himalayan
+/* Ridgelight. A fixed 3D world behind the whole page: layered Himalayan
    ridges, a house on a ridge, the old oak beside it, pines and a sky that runs through a
    full day. Each chapter sets a camera waypoint; page progress sets the hour.
 

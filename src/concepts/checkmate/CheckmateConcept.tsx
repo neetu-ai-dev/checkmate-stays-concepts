@@ -21,7 +21,7 @@ const SQUARES: ({ img: StockKey; alt: string } | { exp: string })[] = [
 
 export default function CheckmateConcept() {
   useFonts("family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Jost:wght@300;400;500&family=Inter:wght@400;500&family=JetBrains+Mono:wght@400");
-  useDocumentTitle("Checkmate Stays — Concept 4 · Checkmate");
+  useDocumentTitle("Checkmate Stays — Concept 3 · Checkmate");
   useKingCursor({ fill: "#f3ece0", stroke: "#0b0a0c", accent: "#c9a35c" });
   const reduced = useReducedMotion();
   const compact = useIsCompact();

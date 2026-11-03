@@ -1,4 +1,4 @@
-/* Concept Four — the endgame, drawn with Canvas 2D.
+/* Checkmate — the endgame, drawn with Canvas 2D.
 
    The whole intro is a pure function of scroll progress p ∈ [0, 1], so scrubbing backwards
    replays it exactly. The board is seen from Black's side: the cornered White king on h8

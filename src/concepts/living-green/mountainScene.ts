@@ -1,6 +1,6 @@
 import * as THREE from "three";
 
-/* Concept Two — the mountain scenery for the restored hero.
+/* Highlands — the mountain scenery for the restored hero.
 
    A photographic plate (layered Himalayan foothills at dawn, licensed stock) with a depth
    map derived from its aerial haze (scripts/make-depth.mjs). Everything the earlier

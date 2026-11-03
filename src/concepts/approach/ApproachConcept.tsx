@@ -27,7 +27,7 @@ function supportsWebGL() {
 
 export default function ApproachConcept() {
   useFonts("family=Newsreader:ital,opsz,wght@0,6..72,300..600;1,6..72,300..500&family=Inter:wght@400;500;600");
-  useDocumentTitle("Checkmate Stays — Concept 1 · Mountain Approach");
+  useDocumentTitle("Checkmate Stays — Concept 2 · Mountain Approach");
   useKingCursor({ fill: "#1d2630", stroke: "#f4f7fa", accent: "#c9774f" });
   const reduced = useReducedMotion();
   const compact = useIsCompact();

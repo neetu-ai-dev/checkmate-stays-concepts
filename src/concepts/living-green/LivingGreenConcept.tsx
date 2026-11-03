@@ -34,7 +34,7 @@ function supportsWebGL2() {
 
 export default function LivingGreenConcept() {
   useFonts("family=Lexend:wght@200;300;400;500");
-  useDocumentTitle("Checkmate Stays — Concept 2 · Highlands");
+  useDocumentTitle("Checkmate Stays — Concept 4 · Highlands");
   const frameRef = useRef<HTMLIFrameElement>(null);
   const cursorStage = useRef(0);
   // the evolving cursor also lives inside the hero document

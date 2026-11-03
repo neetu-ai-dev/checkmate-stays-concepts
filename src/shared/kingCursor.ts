@@ -60,7 +60,7 @@ export function cursorStage(progress: number) {
   return Math.round(Math.min(1, Math.max(0, progress)) * 4 * STEPS) / STEPS;
 }
 
-/** CSS for documents whose stylesheet the app doesn't own (the Concept 2 hero frame). */
+/** CSS for documents whose stylesheet the app doesn't own (the Highlands hero frame). */
 export function kingCursorCss(theme: KingCursorTheme, q = 0) {
   const c = cursorsFor(q, theme);
   return `@media (hover:hover) and (pointer:fine){

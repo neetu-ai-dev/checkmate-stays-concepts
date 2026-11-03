@@ -11,7 +11,7 @@ export function Credits() {
       <p style={{ maxWidth: "70ch" }}>
         All photography in these concepts is licensed stock from Unsplash under the{" "}
         <a href="https://unsplash.com/license">Unsplash License</a>, used as illustrative concept imagery. None of it depicts
-        Checkmate Stays or its suites. Concept 2's hero layout is adapted from ThreeUI SylvaHero (MIT).
+        Checkmate Stays or its suites. The Highlands hero layout is adapted from ThreeUI SylvaHero (MIT).
       </p>
       <div style={{ overflowX: "auto", marginTop: 24 }}>
         <table style={{ borderCollapse: "collapse", width: "100%", fontSize: 14 }}>

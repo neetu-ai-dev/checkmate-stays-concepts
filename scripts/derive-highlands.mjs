@@ -1,4 +1,4 @@
-// Derives Concept 2's hero document from the hash-verified SylvaHero page.
+// Derives the Highlands hero document from the hash-verified SylvaHero page.
 //
 // Kept from the authored page: the stage layout, entrance wipes and masks, pointer
 // parallax, the magnifying dock, both liquid-metal controls, the pixel-reveal cards and

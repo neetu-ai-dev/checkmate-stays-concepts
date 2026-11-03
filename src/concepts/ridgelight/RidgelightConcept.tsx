@@ -111,7 +111,7 @@ function supportsWebGL() {
 
 export default function RidgelightConcept() {
   useFonts("family=Onest:wght@300;400;500&family=Tiro+Devanagari+Hindi&display=swap&family=Instrument+Serif:ital@1");
-  useDocumentTitle("Checkmate Stays — Concept 3 · Ridgelight");
+  useDocumentTitle("Checkmate Stays — Concept 1 · Ridgelight");
   useKingCursor({ fill: "#e9efec", stroke: "#071012", accent: "#ff9a4a" });
   const reduced = useReducedMotion();
   const compact = useIsCompact();

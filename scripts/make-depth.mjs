@@ -1,4 +1,4 @@
-// Derives a depth map for Concept Two's dawn plate from aerial perspective: in layered,
+// Derives a depth map for the Highlands dawn plate from aerial perspective: in layered,
 // hazy ridges, brightness rises with distance (each ridge sits behind more haze), and the
 // sky is farthest of all. Writes an 8-bit greyscale PNG (white = far) beside the hero document.
 // Usage: node scripts/make-depth.mjs
