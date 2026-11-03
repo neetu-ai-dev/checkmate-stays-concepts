@@ -1,0 +1,5 @@
+# keep line endings as written (LF) on every platform
+* text=auto eol=lf
+# the hash-verified SylvaHero source must stay byte-for-byte
+archive/threeui-sylva/** -text
+vendor/** -text

@@ -1,0 +1,10 @@
+/* Tailwind for shadcn-style components in src/components/ui only.
+   - No preflight: the four concepts keep their own base styles untouched.
+   - source(none) + @source: utilities are generated only for classes used in
+     src/components/ui, so no utility can collide with a concept's class names.
+   - Everything lives in cascade layers, so the concepts' unlayered CSS always wins; the shared
+     element resets (base.css) sit in the base layer, beneath the utilities. */
+@layer theme, base, utilities;
+@import "tailwindcss/theme.css" layer(theme);
+@import "tailwindcss/utilities.css" layer(utilities) source(none);
+@source "../components/ui";

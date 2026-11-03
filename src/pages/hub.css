@@ -1,0 +1,32 @@
+.hub {
+  --ink: #f3ece0; --muted: rgba(243, 236, 224, 0.6); --line: rgba(243, 236, 224, 0.14);
+  min-height: 100vh; background: #0b0a0c; color: var(--ink);
+  font-family: "Jost", system-ui, sans-serif; font-weight: 300;
+  padding: clamp(24px, 5vw, 96px) clamp(16px, 5vw, 96px) 48px;
+  max-width: 2400px; margin: 0 auto;
+}
+.hub-head { display: grid; gap: 28px; grid-template-columns: auto 1fr; align-items: end; margin-bottom: clamp(32px, 5vw, 72px); }
+.hub-mark { width: clamp(110px, 10vw, 180px); color: #c79a6b; }
+.hub-kicker { font-size: 0.78rem; letter-spacing: 0.22em; text-transform: uppercase; color: var(--muted); margin-bottom: 10px; }
+.hub h1 { font-family: "Cormorant Garamond", Georgia, serif; font-weight: 400; font-size: clamp(2.4rem, 5.4vw, 5.6rem); line-height: 0.95; letter-spacing: -0.01em; }
+.hub-sub { margin-top: 14px; max-width: 58ch; color: var(--muted); line-height: 1.6; }
+.hub-grid { list-style: none; margin: 0; padding: 0; display: grid; gap: clamp(12px, 1.4vw, 24px); grid-template-columns: repeat(4, 1fr); }
+@media (max-width: 1300px) { .hub-grid { grid-template-columns: repeat(2, 1fr); } }
+@media (max-width: 900px) { .hub-grid { grid-template-columns: repeat(2, 1fr); } }
+@media (max-width: 640px) { .hub-grid { grid-template-columns: 1fr; } .hub-head { grid-template-columns: 1fr; } }
+.hub-card {
+  position: relative; display: flex; flex-direction: column; justify-content: flex-end; text-decoration: none;
+  aspect-ratio: 3 / 4.2; border-radius: 18px; overflow: hidden; border: 1px solid var(--line); isolation: isolate;
+}
+@media (max-width: 640px) { .hub-card { aspect-ratio: 4 / 3.4; } }
+.hub-card img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; z-index: -2; transition: transform 1.2s cubic-bezier(.2,.7,.2,1); filter: saturate(0.85); }
+.hub-card::after { content: ""; position: absolute; inset: 0; z-index: -1; background: linear-gradient(180deg, rgba(11,10,12,0) 20%, rgba(11,10,12,0.92) 88%); }
+.hub-card:hover img, .hub-card:focus-visible img { transform: scale(1.05); }
+.hub-n { position: absolute; top: 16px; left: 16px; padding: 4px 9px 4px 11px; border-radius: 999px; font-size: 0.78rem; letter-spacing: 0.2em; color: rgba(243, 236, 224, 0.9); background: rgba(11, 10, 12, 0.5); -webkit-backdrop-filter: blur(6px); backdrop-filter: blur(6px); }
+.hub-card-body { display: grid; gap: 10px; padding: 22px; }
+.hub-title { font-family: "Cormorant Garamond", Georgia, serif; font-size: clamp(1.8rem, 2.4vw, 3rem); line-height: 1; }
+.hub-line { font-size: 0.95rem; line-height: 1.5; color: rgba(243, 236, 224, 0.82); }
+.hub-tags { display: flex; flex-wrap: wrap; gap: 6px; }
+.hub-tags span { font-size: 0.7rem; letter-spacing: 0.06em; padding: 4px 9px; border: 1px solid var(--line); border-radius: 999px; color: var(--muted); }
+.hub-foot { margin-top: 40px; display: grid; gap: 8px; font-size: 0.82rem; color: var(--muted); max-width: 90ch; line-height: 1.6; }
+.hub-foot a { color: var(--ink); text-underline-offset: 3px; }

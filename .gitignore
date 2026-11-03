@@ -1,0 +1,13 @@
+# dependencies and build output (rebuilt from source)
+node_modules/
+dist/
+.wrangler/
+*.log
+.DS_Store
+Thumbs.db
+
+# superseded review screenshots; the current set is in screenshots/
+archive/screenshots-round3/
+
+# the client's reference video (no longer used by any page)
+video.mp4

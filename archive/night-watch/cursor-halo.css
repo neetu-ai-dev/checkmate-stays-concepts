@@ -1,0 +1,26 @@
+.cursor-halo {
+  --halo: rgba(238, 242, 255, 0.55);
+  --halo-accent: #f1a51e;
+  position: fixed; left: 0; top: 0; z-index: 2000; pointer-events: none;
+  width: 0; height: 0; will-change: transform;
+}
+@media not ((hover: hover) and (pointer: fine)) { .cursor-halo { display: none; } }
+.ch-ring, .ch-ticks {
+  position: absolute; left: 0; top: 0; border-radius: 50%;
+  width: 34px; height: 34px; margin: -3px 0 0 -17px; /* centred on the king's body; the hotspot is the tip of its cross */
+  transition: width .35s cubic-bezier(.2,.7,.2,1), height .35s cubic-bezier(.2,.7,.2,1), margin .35s cubic-bezier(.2,.7,.2,1), opacity .25s, border-color .25s, background-color .25s;
+}
+.ch-ring { border: 1px solid var(--halo); opacity: 0.55; }
+.ch-ticks { opacity: 0;
+  background:
+    linear-gradient(var(--halo), var(--halo)) 50% 0 / 1px 9px no-repeat,
+    linear-gradient(var(--halo), var(--halo)) 50% 100% / 1px 9px no-repeat,
+    linear-gradient(var(--halo), var(--halo)) 0 50% / 9px 1px no-repeat,
+    linear-gradient(var(--halo), var(--halo)) 100% 50% / 9px 1px no-repeat; }
+.cursor-halo[data-mode="hidden"] .ch-ring, .cursor-halo[data-mode="text"] .ch-ring { opacity: 0; }
+.cursor-halo[data-mode="action"] .ch-ring { width: 26px; height: 26px; margin: 1px 0 0 -13px; border-color: var(--halo-accent); opacity: 0.9; }
+.cursor-halo[data-mode="card"] .ch-ring { width: 56px; height: 56px; margin: -14px 0 0 -28px; background: rgba(238, 242, 255, 0.05); opacity: 0.7; }
+.cursor-halo[data-mode="image"] .ch-ring { width: 74px; height: 74px; margin: -23px 0 0 -37px; opacity: 0.8; }
+.cursor-halo[data-mode="image"] .ch-ticks { width: 74px; height: 74px; margin: -23px 0 0 -37px; opacity: 0.8; }
+.cursor-halo.is-down .ch-ring { width: 22px; height: 22px; margin: 3px 0 0 -11px; }
+@media (prefers-reduced-motion: reduce) { .ch-ring, .ch-ticks { transition: none; } }

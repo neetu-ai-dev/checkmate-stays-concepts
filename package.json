@@ -1,0 +1,38 @@
+{
+  "name": "checkmate-stays-concepts",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc -p tsconfig.json && vite build",
+    "preview": "vite preview",
+    "verify:threeui": "node scripts/verify-threeui.mjs",
+    "typecheck": "tsc -p tsconfig.json",
+    "fetch:stock": "node scripts/fetch-stock.mjs"
+  },
+  "dependencies": {
+    "clsx": "^2.1.1",
+    "framer-motion": "^14.8.0",
+    "gsap": "^3.13.0",
+    "lenis": "^1.1.20",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "react-router-dom": "^6.28.0",
+    "tailwind-merge": "^3.7.0",
+    "three": "^0.170.0"
+  },
+  "devDependencies": {
+    "@designcodeio/threeui": "^1.2.0",
+    "@tailwindcss/vite": "^4.3.3",
+    "@types/react": "^18.3.12",
+    "@types/react-dom": "^18.3.1",
+    "@types/three": "^0.170.0",
+    "@vitejs/plugin-react": "^4.3.4",
+    "playwright": "^1.48.2",
+    "sharp": "^0.33.5",
+    "tailwindcss": "^4.3.3",
+    "typescript": "^5.6.3",
+    "vite": "^5.4.11"
+  }
+}

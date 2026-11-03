@@ -1,0 +1,80 @@
+/* Booking widget. Each concept themes it through the --bw-* custom properties. */
+.bw {
+  --bw-bg: rgba(12, 12, 14, 0.72);
+  --bw-fg: #f5efe4;
+  --bw-muted: rgba(245, 239, 228, 0.62);
+  --bw-line: rgba(245, 239, 228, 0.16);
+  --bw-field: rgba(255, 255, 255, 0.04);
+  --bw-accent: #f1a51e;
+  --bw-accent-fg: #160d05;
+  --bw-radius: 14px;
+  --bw-font: inherit;
+  --bw-blur: 18px;
+  font-family: var(--bw-font);
+  color: var(--bw-fg);
+  background: var(--bw-bg);
+  border: 1px solid var(--bw-line);
+  border-radius: var(--bw-radius);
+  padding: 14px;
+  -webkit-backdrop-filter: blur(var(--bw-blur)) saturate(1.2);
+  backdrop-filter: blur(var(--bw-blur)) saturate(1.2);
+  width: 100%;
+  min-width: 0;
+  max-width: 100%;
+}
+.bw-title { margin: 2px 4px 12px; font-size: 0.8rem; letter-spacing: 0.18em; text-transform: uppercase; color: var(--bw-muted); }
+.bw-fields { display: grid; gap: 8px; grid-template-columns: repeat(2, minmax(0, 1fr)); }
+@media (min-width: 900px) {
+  .bw--bar .bw-fields { grid-template-columns: minmax(0, 1.2fr) minmax(0, 1.2fr) minmax(0, 1fr) minmax(0, 1fr) minmax(0, 1.35fr); align-items: stretch; }
+}
+.bw-field {
+  min-width: 0;
+  display: flex; flex-direction: column; justify-content: center; gap: 4px;
+  padding: 9px 12px; min-height: 58px;
+  background: var(--bw-field);
+  border: 1px solid var(--bw-line);
+  border-radius: calc(var(--bw-radius) - 6px);
+  transition: border-color 0.2s, background-color 0.2s;
+}
+.bw-field:focus-within { border-color: var(--bw-accent); }
+.bw-label { font-size: 0.68rem; letter-spacing: 0.14em; text-transform: uppercase; color: var(--bw-muted); }
+.bw-field input[type="date"] {
+  all: unset; font: inherit; font-size: 0.98rem; color: var(--bw-fg); min-height: 24px; cursor: text; width: 100%; min-width: 0; box-sizing: border-box;
+  color-scheme: var(--bw-scheme, dark);
+}
+.bw-field input[type="date"]::-webkit-calendar-picker-indicator { opacity: 0.6; cursor: pointer; }
+.bw-stepper { display: flex; align-items: center; justify-content: space-between; gap: 6px; }
+.bw-stepper output { font-size: 1rem; min-width: 1.5ch; text-align: center; font-variant-numeric: tabular-nums; }
+.bw-stepper button {
+  all: unset; box-sizing: border-box; display: grid; place-items: center;
+  width: 30px; height: 30px; border-radius: 50%;
+  border: 1px solid var(--bw-line); color: var(--bw-fg); font-size: 1rem; line-height: 1;
+  transition: border-color 0.2s, background-color 0.2s;
+}
+.bw-stepper button:hover:not(:disabled) { border-color: var(--bw-accent); }
+.bw-stepper button:disabled { opacity: 0.3; }
+.bw-stepper button:focus-visible { outline: 2px solid var(--bw-accent); outline-offset: 2px; }
+.bw-submit {
+  all: unset; box-sizing: border-box; grid-column: 1 / -1;
+  display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 2px;
+  min-height: 58px; padding: 8px 18px; text-align: center;
+  background: var(--bw-accent); color: var(--bw-accent-fg);
+  border-radius: calc(var(--bw-radius) - 6px);
+  font-weight: 600; letter-spacing: 0.02em;
+  transition: filter 0.2s, transform 0.2s;
+}
+@media (min-width: 900px) { .bw--bar .bw-submit { grid-column: auto; } }
+.bw-submit:hover:not(:disabled) { filter: brightness(1.08); }
+.bw-submit:active:not(:disabled) { transform: translateY(1px); }
+.bw-submit:disabled { opacity: 0.55; }
+.bw-submit:focus-visible { outline: 2px solid var(--bw-fg); outline-offset: 3px; }
+.bw-nights { font-size: 0.72rem; font-weight: 400; opacity: 0.75; letter-spacing: 0.06em; }
+.bw-note { margin: 10px 4px 0; font-size: 0.72rem; color: var(--bw-muted); }
+@media (max-width: 420px) {
+  .bw { padding: 10px; }
+  .bw-field { padding: 8px 10px; }
+}
+@media (pointer: coarse) {
+  .bw-stepper button { width: 40px; height: 40px; }
+}
+.bw-hint { margin: 10px 4px 0; font-size: 0.8rem; color: var(--bw-accent); }
